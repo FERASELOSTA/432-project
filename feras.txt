@@ -1,0 +1,79 @@
+To-Do List Manager
+A desktop-based To-Do List Manager built with Python and PyQt5. This application allows users to add, edit, delete, and toggle the completion status of tasks using a linked list structure. It supports both English and Arabic languages and provides customizable dark and light themes along with search, filter, and sorting functionalities.
+
+Features
+Multi-Language Support:
+Switch between English and Arabic using dedicated buttons.
+
+Task Management:
+Add new tasks, edit existing tasks, delete tasks, and mark tasks as complete/incomplete.
+
+Customizable Themes:
+Toggle between dark mode (purple & black) and light mode (blue & grey).
+
+Search, Filter, and Sort:
+
+Search: Quickly locate tasks by description.
+Filter: Filter tasks by priority (High, Medium, Low) and status (Completed, Incomplete).
+Sort: Sort tasks based on priority.
+User-Friendly Dialogs:
+Custom dialogs for adding and editing tasks ensure a smooth user experience.
+
+Requirements
+Python 3.7+
+PyQt5
+Installation
+Install the PyQt5 library using pip:
+
+bash
+Copy
+Edit
+pip install PyQt5
+How to Run
+Save the provided Python code in a file (e.g., todo_manager.py).
+
+Run the application from the command line:
+
+bash
+Copy
+Edit
+python todo_manager.py
+Code Structure
+Language Dictionary:
+The LANGUAGES dictionary holds UI text translations for both English and Arabic.
+
+Data Structures for Task Management:
+
+TaskNode: Represents an individual task with attributes for description, priority, date, and completion status.
+TaskList: Manages the collection of tasks using a linked list.
+Dialogs:
+
+AddTaskDialog: A dialog window to input new task details.
+EditTaskDialog: A dialog window to modify existing task details.
+Main Application Window (ToDoApp):
+Integrates all components:
+
+Language selection buttons.
+Buttons for task operations (add, edit, delete, toggle status).
+Search box, filter, and sort combo boxes.
+A task list widget that displays tasks with emojis and formatting to indicate priority and completion status.
+Theme toggling between dark and light modes.
+Customization
+Themes:
+The dark and light themes are defined by the dark_style and light_style variables. Feel free to modify these CSS styles to match your desired look and feel.
+
+Language Extensions:
+To add additional languages, extend the LANGUAGES dictionary with new language keys and corresponding translations.
+
+Contributing
+Contributions are welcome!
+
+Fork the repository.
+Create your feature branch (git checkout -b feature/my-new-feature).
+Commit your changes (git commit -am 'Add some feature').
+Push to the branch (git push origin feature/my-new-feature).
+Open a pull request.
+License
+This project is licensed under the MIT License.
+
+This README provides an overview of the application, explains its features, guides users on installation and usage, and details the structure of the code for further customization or contributions.
